@@ -20,8 +20,16 @@
             text-decoration: none;
         }
 
+        #about h1 {
+            margin-top: 90px;
+        }
+
         #about a i {
             font-size: 30px;
+        }
+
+        #about img {
+            width: 400px;
         }
 
         div.container {
@@ -44,6 +52,41 @@
 
         #projects div.col {
             padding-left: 96px;
+        }
+
+        @media (max-width: 30rem) {
+            main {
+                width: 100%;
+                margin: auto;
+            }
+
+            #about a {
+                color: black;
+                text-decoration: none;
+            }
+
+            #about h1 {
+                margin: 15px;
+            }
+
+            #about img {
+                height: auto;
+                width: 100vw;
+
+            }
+
+            #about button {
+                margin: 5px;
+            }
+
+            div.card {
+                width: 20rem;
+                height: 35rem;
+            }
+
+            #projects div.col {
+                padding-left: 9px;
+            }
         }
     </style>
 </head>
@@ -79,7 +122,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col">
-                        <h1 style="margin-top: 90px;"> about. </h1>
+                        <h1> about. </h1>
                         <h4> Hello! I'm Arina and I'm Frontend developer </h4>
                         <p> I graduated from St. Petersburg State University. In March
                             2022 I started studying
@@ -92,14 +135,14 @@
                             <a href="https://github.com/ArinaKunashko"><i class="bi bi-github"></i></a>
                         </p>
                     </div>
-                    <div class="col-6">
-                        <img src="./photo_por.jpg" class="rounded float-end" alt="portfolio_photo"
-                            style="width: 400px;" />
+                    <div class="col">
+                        <img src="./photo_por.jpg" class="rounded float-end" alt="portfolio_photo" />
                     </div>
+
                 </div>
             </div>
             <div class="container text-center">
-                <div class="row row-cols-md-2">
+                <div class="row row-cols-1 row-cols-md-2">
 
                     <div class="col">
                         <dt>
@@ -117,7 +160,7 @@
                         </dt>
                     </div>
                     <div class="col">
-                        <h1 style="margin-top: 30px ;"> skills. </h1>
+                        <h1> skills. </h1>
                     </div>
                 </div>
 
@@ -126,17 +169,17 @@
         <section id="projects">
             <div class="container text-center">
                 <h1 style="margin-bottom: 40px; text-align: left;"> check out my projects. </h1>
-                <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="row row-cols-1 row-cols-xl-2 row-cols-md-2 g-4 ">
                     <div class="col">
                         <div class="card">
                             <img src="./Social-N.png" class="card-img-top" alt="portfolio_photo">
                             <div class="card-body">
                                 <h5 class="card-title">Social-Network</h5>
                                 <p class="card-text">
-                                
-                                    <p>Project development in Java Script + React, using the Mui library  </p>
-                                    <ul>
-                                    <li>login logic with captcha rendering and user memorization  </li>
+
+                                <p>Project development in Java Script + React, using the Mui library </p>
+                                <ul>
+                                    <li>login logic with captcha rendering and user memorization </li>
                                     <li>edit information about yourself, upload a user's photo and change status </li>
                                     <li>add new posts (with the ability to put “like") and send messages </li>
                                     <li>subscription/unsubscription from users </li>
@@ -156,9 +199,10 @@
                             <div class="card-body">
                                 <h5 class="card-title">Flower Shop</h5>
                                 <p class="card-text">
-                                    <p>Project development on Type Script + React, using the Mui library   </p>
+                                <p>Project development on Type Script + React, using the Mui library </p>
                                 <ul>
-                                    <li>view the catalog of flowers with the ability to add your favorite items to the basket
+                                    <li>view the catalog of flowers with the ability to add your favorite items to the
+                                        basket
                                     </li>
                                     <li>edit the amount of added items on the catalog page and on the cart page</li>
                                 </ul>
@@ -177,8 +221,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Currency Converter</h5>
                                 <p class="card-text">
-                                    <p>Project development in Java Script + React, using the Mui library. The converter uses the latest exchange 
-                                        rates of the Central Bank of the Russian Federation via the API</p>
+                                <p>Project development in Java Script + React, using the Mui library. The converter uses
+                                    the latest exchange
+                                    rates of the Central Bank of the Russian Federation via the API</p>
                                 <ul>
                                     <li> 12 currencies: 4 default and 8 additional </li>
                                     <li> data entry and automatic receipt of the result </li>
@@ -199,7 +244,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Quiz</h5>
                                 <p class="card-text">
-                                    <p>Project development in Java Script + React, using the Mui library</p>
+                                <p>Project development in Java Script + React, using the Mui library</p>
                                 <ul>
                                     <li> questions on 4 topics (HTML, CSS, JS, React) </li>
                                     <li> displaying the percent of answered questions with ProgressLine and the result
@@ -219,12 +264,12 @@
                             <div class="card-body">
                                 <h5 class="card-title">ToDo List</h5>
                                 <p class="card-text">
-                                    <p>Project development in Java Script + React, using the Mui library </p>
+                                <p>Project development in Java Script + React, using the Mui library </p>
                                 <ul>
                                     <li> add, delete, edit a task
                                     </li>
                                     <li> mark the task as completed </li>
-                                    <li> filtering tasks by status (completed, uncomplete, all)  </li>
+                                    <li> filtering tasks by status (completed, uncomplete, all) </li>
                                 </ul>
                                 </p>
                                 <br /> <br /><br />
@@ -241,7 +286,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">ToDo with Firebase </h5>
                                 <p class="card-text">
-                                    <p>Project development in Java Script + React, using the Mui library. Backend using Firebase</p>
+                                <p>Project development in Java Script + React, using the Mui library. Backend using
+                                    Firebase</p>
                                 <ul>
                                     <li> create, delete, edit the task</li>
                                     <li> add a deadline, title, description and files to the task</li>
