@@ -42,5 +42,14 @@ export default {
   start: 'Start',
   slogan: 'I strive to enhance user interfaces using cutting-edge technologies in web development.',
   navigate: 'Navigate',
-  downloadRes: 'Download resume'
+  downloadRes: 'Download resume',
+  describtionAnyQuery: "I integrated the AnyQuery product using the Vue.js framework, describing functions in JavaScript to gather necessary data on the client's website. I handled requests with API, and crafted the layout of the search results page using pure CSS.",
+  describtionDolyame: "I integrated the 'Doliami' product using the Vue.js framework, creating and optimizing the functionality for gathering necessary data on the client's website. I actively participated in the product development and optimization.",
+  describtionTkroi: 'Individually developed a web application using Nuxt.js 2, with a primary focus on optimization and performance enhancements. Employed Tailwind CSS for streamlined and scalable styling, ensuring an efficient and visually appealing user interface. Independently implemented Docker throughout the project to create a unified and easily scalable development environment.',
+  describtionHilbro: 'Development of a medical website using Vue.js and Tailwind CSS. Full-stack frontend development: project architecture, dynamic interface creation, API integration, responsive design. Performance optimization, testing, and deployment. Active collaboration within a team to achieve a high-quality product.',
+  describtionCalcul: 'Developed the frontend part of the mortgage calculator product using Vue 3 and Bulma CSS for styling.With intuitive input fields and real-time calculations, users can dynamically adjust loan parameters, such as interest rates and loan terms, to visualize the impact on monthly payments. ',
+  mortgageCalculator: 'Mortgage Calculator',
+  inTheCompany: 'In the company',
+  goToTheWebsite: 'Go to the website'
+
 };
