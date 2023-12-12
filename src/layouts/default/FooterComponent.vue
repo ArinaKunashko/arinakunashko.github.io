@@ -3,7 +3,7 @@
 
     <div class="d-flex flex-row">
 
-      <div class="d-flex flex-column px-lg-16 mx-lg-9 py-lg-10 pa-10">
+      <div class="d-flex flex-column px-lg-16 mx-lg-9 py-lg-10 py-5 px-10">
         <h2 class="text-h5 text-mainTitle mb-5"> {{ $t('slogan') }}</h2>
         <div class="d-flex flex-row my-3 justify-start">
           <svg-icon type="mdi" :path="pathDownLoad"></svg-icon>
@@ -19,18 +19,18 @@
 
       </div>
 
-      <div class="d-flex flex-column px-lg-16 mx-lg-9 py-lg-10 pa-10">
+      <div class="d-flex flex-column px-lg-16 mx-lg-9 py-lg-10 py-5 px-10">
         <div class="d-flex justify-start">
           <h2 class="text-h4 text-mainTitle mb-5 d-flex">{{ $t('navigate') }}</h2>
         </div>
-        <v-btn v-for="link in links" :key="link" color="footerText" variant="text" class="d-flex justify-start pa-3"
+        <a v-for="link in links" :key="link" color="footerText" class="d-flex justify-start text-body-1 text-footerText text-decoration-none py-2"
           rounded="xl" :href="link.href" v-scroll-to="link.href">
           {{ link.text }}
-        </v-btn>
+      </a>
       </div>
 
       <div
-        class="px-lg-16 mx-lg-9 d-flex py-lg-10 d-flex flex-column pa-10 flex-lg-column flex-sm-column flex-md-column flex-sm-column flex-column flex-xs-column">
+        class="px-lg-16 mx-lg-9 d-flex py-lg-10 d-flex flex-column py-5 px-10 flex-lg-column flex-sm-column flex-md-column flex-sm-column flex-column flex-xs-column">
         <div class="d-flex justify-start">
           <h2 class="text-h4 text-mainTitle mb-5">{{ $t('contact') }}</h2>
         </div>
@@ -55,9 +55,9 @@
               class="text-body-1 text-footerText text-decoration-none ml-3">
               {{ myEmail }}
             </a>
-            <v-btn v-else text @click="openEmailClient" class="text-body-1 text-footerText text-decoration-none ml-3">
+            <a v-else  @click="openEmailClient" class="text-body-1 text-footerText text-decoration-none ml-3">
               {{ myEmail }}
-            </v-btn>
+            </a>
           </div>
 
         </div>
@@ -134,3 +134,23 @@ onUnmounted(() => {
   // Очистка ресурсов, если необходимо
 });
 </script>
+
+<style scoped>
+@media (max-width: 767px) {
+  #footer .d-flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #footer .d-flex.flex-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #footer .px-lg-16 {
+    padding: 10px; /* Adjust the padding for small screens */
+  }
+  
+  /* Add more responsive styles as needed */
+}
+</style>

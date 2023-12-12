@@ -161,6 +161,7 @@ header.v-bottom-navigation.v-bottom-navigation--active.v-bottom-navigation--grow
   .main-content[data-v-e9eea4ec] {
     height: 100vh;
   }
+
 }
 
 @media screen and (max-width: 540px) {

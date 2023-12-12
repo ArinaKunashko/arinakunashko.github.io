@@ -1,13 +1,13 @@
 <template>
-  <section id="portfolio" class="pa-10 bg-backgroundResume">
+  <section id="portfolio" class="bg-backgroundResume pa-lg-10 ">
     <div class="px-lg-16 mx-lg-9 py-lg-10">
       <div class="d-flex lg:px-16 xl:px-16 md:px-4 sm:px-4 ld:mx-9 xl:mx-9 fill-height" style="flex: 1;">
-        <h2 class="text-h4 text-blockHeader mb-5">{{ $t('projects') }}</h2>
+        <h2 class="text-h4 text-blockHeader mb-5 pa-sm-10 pa-lg-0 pa-md-10 pa-10 ">{{ $t('projects') }}</h2>
       </div>
     </div>
-    <v-slide-group show-arrows selected-class="bg-success" class="pa-4 bg-backgroundResume">
+    <v-slide-group show-arrows selected-class="bg-success" class=" bg-backgroundResume px-lg-10">
       <v-slide-group-item v-for="(project, i) in projects" :key="i" class="ma-4">
-        <v-card class="ma-4 bg-white" width="400" height="530" style="    display: flex; flex-direction: column;">
+        <v-card class="ma-4 bg-white" max-width="300" height="580" style=" display: flex; flex-direction: column;">
           <v-img class="align-end text-white" height="200" :src="project.imgSrc" cover>
           </v-img>
           <v-card-title class="text-black bg-grey-lighten-5">{{ project.projectName }}</v-card-title>
