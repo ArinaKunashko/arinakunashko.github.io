@@ -8,7 +8,7 @@
     <v-slide-group show-arrows selected-class="bg-success" class=" bg-backgroundResume px-lg-10">
       <v-slide-group-item v-for="(project, i) in projects" :key="i" class="ma-4">
         <v-card class="ma-4 bg-white" max-width="300" height="580" style=" display: flex; flex-direction: column;">
-          <v-img class="align-end text-white" height="200" :src="project.imgSrc" cover>
+          <v-img class="align-end text-white" height="200" :src="project.imgSrc" style="max-height: 200px !important;" >
           </v-img>
           <v-card-title class="text-black bg-grey-lighten-5">{{ project.projectName }}</v-card-title>
 
