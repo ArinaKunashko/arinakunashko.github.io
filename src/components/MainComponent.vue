@@ -1,8 +1,7 @@
 <template>
   <v-container fluid class="main-content px-lg-10 px-sm-7 px-2 px-md-5 py-sm-0 pt-xs-15 pt-sm-15 py-md-15  py-lg-0 py-15 ">
     <v-row style="height: 80vh; position: relative;">
-      <!-- Левая часть с текстом о вас -->
-
+      <!-- Левая часть с текстом -->
 
       <v-col cols="12" md="6" class="text-column d-flex flex-column justify-lg-center px-lg-15 px-xs-5 justify-md-start" style="height: 100%;">
           <p v-if="!isMobile"  class="text-lg-h3 text-sm-h2 py-4 text-error text-mainTitle"> {{ $t('performanceName') }}</p>
@@ -12,19 +11,17 @@
           <div style="flex:1">
             <p class="text-lg-h3 text-sm-h4 text-h4 py-4 text-error text-mainTitle" > {{ $t('performanceName') }}</p>
           </div>
-          <div style="border-left: 1px solid black; width: 100%; flex:1; display: flex; align-items: flex-end;" class="d-flex" >
+          <div style="border-left: 1px solid ; width: 100%; flex:1; display: flex; align-items: flex-end;" class="d-flex" >
             <img  src="../assets/img/MyFoto_Mobile.png" alt="Arina" class="half-width-height ml-4" />
           </div>
         </div>
-       
+      
         <p class="text-lg-h3 text-sm-h4 text-h4 py-lg-4 py-0 pt-sm-10 pt-lg-0 pt-4 text-mainTitle"> {{ $t('performanceProfession') }}</p>
         <div class="text-h5 d-flex py-2 d-flex flex-row flex-wrap">
           <p class="text-mainTitle text-lg-h4 text-sm-h4 text-h4 inline ">{{ $t('develop') }}</p>
           <p class="ml-lg-2 ml-md-2 ml-sm-2 text-secondary text-lg-h4 text-sm-h4 text-h4 inline "> 	 {{$t('technologies') }} </p>
         </div>
-
       </v-col>
-
       <!-- Правая часть с фотографией -->
       <v-col cols="12" md="6" class="photo-column px-15 d-flex flex-column justify-end align-end "> 
   <img v-if="!isMobile" src="../assets/img/Subject.png" alt="Arina" class="half-width-height" />
@@ -46,14 +43,6 @@ const isMobile = computed(() => window.innerWidth < 1000);
 .photo-column {
   padding: 0;
   height: 98%; /* Добавляем высоту 100% для занимания всей высоты контейнера */
-}
-
-/* Стили для .half-width-height */
-.half-width-height {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  border-radius: 0 0 20px 0; /* Задаем радиус скругления только справа снизу */
 }
 
 /* Стили для .cont (в случае мобильного вида) */
@@ -80,25 +69,18 @@ const isMobile = computed(() => window.innerWidth < 1000);
 }
 
 @media screen and (min-width: 1000px) {
-  .half-width-height[data-v-e9eea4ec] {
+  .half-width-height{
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
 }
-.half-width-height {
-  width: 100%;
-  height: 70vh;
-  /* Половина высоты экрана */
-  object-fit: cover;
-  /* чтобы фото занимало всю область, сохраняя пропорции */
-}
 }
 @media screen and (max-width: 1000px) {
-  .half-width-height[data-v-e9eea4ec] {
+  .half-width-height {
     width: 100%;
     /* object-fit: contain; */
-    border-radius: 1000px;
-}
+    border-radius: 50% !important;
+  }
 .cont {
     height: 50vh;
 }
