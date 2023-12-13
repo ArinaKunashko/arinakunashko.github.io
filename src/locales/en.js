@@ -2,7 +2,8 @@
 export default {
   responsibilities: 'Responsibilities',
   achievements: 'Achievements',
-  performance: 'Arina Kunashko - Frontend Developer.',
+  performanceName: 'Arina Kunashko',
+  performanceProfession: '— Frontend Developer',
   develop: 'I develop with',
   technologies: 'JavaScript and Vue.js.',
   aboutTitle: 'About me',
