@@ -12,7 +12,7 @@
             <p class="text-lg-h3 text-sm-h4 text-h4 py-4 text-error text-mainTitle" > {{ $t('performanceName') }}</p>
           </div>
           <div style="border-left: 1px solid ; width: 100%; flex:1; display: flex; align-items: flex-end;" class="d-flex" >
-            <img  src="../assets/img/MyFoto_Mobile.png" alt="Arina" class="half-width-height ml-4" />
+            <img  src="../assets/img/PhotoForMobile.png" alt="Arina" class="half-width-height ml-4" />
           </div>
         </div>
       
