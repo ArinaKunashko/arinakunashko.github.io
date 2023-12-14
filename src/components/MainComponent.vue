@@ -6,7 +6,7 @@
       <v-col  cols="12" md="12" lg="6" xl="6" class="text-column d-flex flex-column justify-lg-center px-lg-15 px-xs-5 justify-md-start" style="height: 100%;">
           <p v-if="!isMobile"  class="text-lg-h3 text-sm-h2 py-4 text-error text-mainTitle"> {{ $t('performanceName') }}</p>
          
-        <div  class="d-flex cont" >
+        <div v-if="isMobile"   class="d-flex cont" >
           <div style="flex:1">
             <p class="text-lg-h3 text-sm-h4 text-h4 py-4 text-error text-mainTitle" > {{ $t('performanceName') }}</p>
           </div>
