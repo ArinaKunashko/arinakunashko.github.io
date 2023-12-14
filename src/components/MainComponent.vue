@@ -3,11 +3,10 @@
     <v-row style="height: 80vh; position: relative;">
       <!-- Левая часть с текстом -->
 
-      <v-col cols="12" md="6" class="text-column d-flex flex-column justify-lg-center px-lg-15 px-xs-5 justify-md-start" style="height: 100%;">
+      <v-col  cols="12" md="12" lg="6" xl="6" class="text-column d-flex flex-column justify-lg-center px-lg-15 px-xs-5 justify-md-start" style="height: 100%;">
           <p v-if="!isMobile"  class="text-lg-h3 text-sm-h2 py-4 text-error text-mainTitle"> {{ $t('performanceName') }}</p>
          
-
-        <div v-if="isMobile" class="d-flex cont" >
+        <div  class="d-flex cont" >
           <div style="flex:1">
             <p class="text-lg-h3 text-sm-h4 text-h4 py-4 text-error text-mainTitle" > {{ $t('performanceName') }}</p>
           </div>
@@ -15,7 +14,7 @@
             <img  src="../assets/img/PhotoForMobile.png" alt="Arina" class="half-width-height ml-4" />
           </div>
         </div>
-      
+   
         <p class="text-lg-h3 text-sm-h4 text-h4 py-lg-4 py-0 pt-sm-10 pt-lg-0 pt-4 text-mainTitle"> {{ $t('performanceProfession') }}</p>
         <div class="text-h5 d-flex py-2 d-flex flex-row flex-wrap">
           <p class="text-mainTitle text-lg-h4 text-sm-h4 text-h4 inline ">{{ $t('develop') }}</p>
@@ -34,7 +33,7 @@
 import { ref, computed } from 'vue';
 
 const show = ref(true)
-const isMobile = computed(() => window.innerWidth < 1000);
+const isMobile = computed(() => window.innerWidth < 1030);
 
 </script>
 
@@ -68,14 +67,14 @@ const isMobile = computed(() => window.innerWidth < 1000);
   /* Добавляем отступы к текстовой части */
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1031px) {
   .half-width-height{
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
 }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   .half-width-height {
     width: 100%;
     /* object-fit: contain; */
