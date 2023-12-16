@@ -18,8 +18,8 @@
         <p class="text-lg-h3 text-sm-h4 text-h4 py-lg-4 py-0 pt-sm-10 pt-lg-0 pt-4 text-mainTitle"> {{
           $t('performanceProfession') }}</p>
         <div class="text-h5 d-flex py-2 d-flex flex-row flex-wrap">
-          <p class="text-mainTitle text-lg-h4 text-sm-h4 text-h4 inline ">{{ $t('develop') }}</p>
-          <p class="ml-lg-2 ml-md-2 ml-sm-2 text-secondary text-lg-h4 text-sm-h4 text-h4 inline "> {{ $t('technologies') }}
+          <p class="text-mainTitle text-lg-h4 text-sm-h4 text-h4 inline mr-lg-2 mr-md-2 mr-sm-2">{{ $t('develop') }}</p>
+          <p class="text-secondary text-lg-h4 text-sm-h4 text-h4 inline "> {{ $t('technologies') }}
           </p>
         </div>
       </v-col>
