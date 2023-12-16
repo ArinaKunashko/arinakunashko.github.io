@@ -1,1 +1,0 @@
-import{_ as o,r as t,o as r,c as a,w as c,V as n,a as s}from"./index-637adade.js";const _={};function f(l,p){const e=t("router-view");return r(),a(n,null,{default:c(()=>[s(e)]),_:1})}const i=o(_,[["render",f]]);export{i as default};
