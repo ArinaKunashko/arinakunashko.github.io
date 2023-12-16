@@ -7,11 +7,11 @@
         <h2 class="text-h5 text-mainTitle mb-5"> {{ $t('slogan') }}</h2>
         <div class="d-flex flex-row my-3 justify-start">
           <svg-icon type="mdi" :path="pathDownLoad"></svg-icon>
-          <a v-if="$t('downloadRes')=== 'Скачать резюме'" href="/Kunashko Arina CV Frontend Developer.pdf" download="CV_Arina_Kunashko_Frontend_dev.pdf"
+          <a v-if="$t('downloadRes')=== 'Скачать резюме'" href="./Kunashko Arina CV Frontend Developer.pdf" download="CV_Arina_Kunashko_Frontend_dev.pdf"
             class="text-body-1 text-footerText text-decoration-none ml-3">
             {{ $t('downloadRes') }}
           </a>
-          <a v-if="$t('downloadRes')=== 'Download resume'" href="/Arina Kunashko  CV Frontend Developer.pdf" download="CV_Arina_Kunashko_Frontend_dev.pdf"
+          <a v-if="$t('downloadRes')=== 'Download resume'" href="./Arina Kunashko  CV Frontend Developer.pdf" download="CV_Arina_Kunashko_Frontend_dev.pdf"
             class="text-body-1 text-footerText text-decoration-none ml-3">
             {{ $t('downloadRes') }}
           </a>
