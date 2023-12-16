@@ -79,9 +79,7 @@ import LanguageSwitcher from './components/LanguageSwitcher.vue';
 import Loader from './components/Loader.vue';
 
 const pathTheme = mdiThemeLightDark;
-const value = ref(1);
 const currentTheme = ref('customLightTheme');
-const active = ref(true);
 const theme = useTheme();
 const darkMode = ref(false);
 
@@ -100,7 +98,6 @@ const toggleMenu = () => {
 const closeMenu = () => {
   menu.value = false;
 };
-
 
 const isLoading = ref(true);
 
