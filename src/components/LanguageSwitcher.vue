@@ -18,15 +18,19 @@ export default {
   },
   data() {
     return {
-      currentLanguage: 'en',
       pathWeb: mdiWeb
     };
   },
+  computed: {
+    currentLanguage() {
+      return this.$store.getters.currentLanguage
+    }
+  },
   methods: {
     changeLanguage() {
-      this.currentLanguage = this.currentLanguage === 'ru' ? 'en' : 'ru';
+      const lang = this.currentLanguage === 'ru' ? 'en' : 'ru';
+      this.$store.commit('updateLanguage', lang)
       // Предположим, что у вас есть $i18n и $store
-      console.log('-----------------', this.currentLanguage);
       if (this.$i18n && this.$store) {
         this.$i18n.locale = this.currentLanguage;
         this.$store.commit('updateLanguage', this.currentLanguage);

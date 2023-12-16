@@ -26,7 +26,7 @@ registerPlugins(app)
 
 const i18n = createI18n({
   legacy: false, // you must set `false`, to use Composition API
-  locale: 'en',
+  locale: store.getters.currentLanguage,
   messages: {
     en: enMessages,
     ru: ruMessages,

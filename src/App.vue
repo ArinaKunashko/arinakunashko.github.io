@@ -2,7 +2,7 @@
   <v-app>
     <Loader v-if="isLoading" />
     <v-layout id="start" v-else class="overflow-visible d-flex" style="height: 60px;">
-      <v-bottom-navigation v-if="!isMobile" v-model="value" class="bg-background" grow :active="active">
+      <v-bottom-navigation v-if="!isMobile"  class="bg-background" grow >
         <div class="d-flex flex-1-1 justify-center align-center">
           <a v-scroll-to="'#about'">
             <v-btn>
