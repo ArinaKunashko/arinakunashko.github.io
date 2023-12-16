@@ -114,6 +114,10 @@ onMounted(() => {
 
 
 <style>
+
+* {
+  touch-action: auto !important;
+}
 .v-menu>.v-overlay__content {
   width: 100% !important;
   margin-top: 65px !important;

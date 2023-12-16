@@ -100,7 +100,7 @@ onUnmounted(() => {
   
 <style scoped>
 .v-slide-group {
-    touch-action: auto !important;
+  touch-action: pan-y pinch-zoom !important;
 }
 </style>
   
