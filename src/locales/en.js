@@ -7,7 +7,7 @@ export default {
   develop: 'I develop with',
   technologies: 'JavaScript and Vue.js.',
   aboutTitle: 'About me',
-  aboutContent: 'Hello! My name is Arina, and I am a Frontend Developer. I create projects in JavaScript using the Vue.js framework with enthusiasm and passion. My work is characterized by a creative approach and is focused on achieving tangible results. I am always ready to learn new technologies and embrace professional challenges that contribute to my development and growth.',
+  aboutContent: 'Hello! My name is Arina, and I am a Frontend Developer. I create projects in JavaScript using the Vue.js framework with enthusiasm. My work is characterized by a creative approach and is focused on achieving tangible results. I am always ready to learn new technologies and embrace professional challenges that contribute to my development and growth.',
   experience: 'years of work experience.',
   education: 'Education',
   univ: 'Saint Petersburg State University (2021)',

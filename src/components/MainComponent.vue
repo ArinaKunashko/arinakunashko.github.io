@@ -24,9 +24,9 @@
         </div>
       </v-col>
       <!-- Правая часть с фотографией -->
-      <v-col cols="12" md="6" class="photo-column px-15 d-flex flex-column justify-end align-end ">
-        <img v-if="!isMobile" src="../assets/img/Subject.png" alt="Arina" class="half-width-height" />
-      </v-col>
+      <v-col cols="12" md="6" class="photo-column px-15 d-flex flex-column justify-end align-end">
+  <img v-if="!isMobile" src="../assets/img/Subject copy.png" alt="Arina" class="half-width-height pinned-to-bottom" />
+</v-col>
     </v-row>
   </v-container>
 </template>
@@ -44,7 +44,12 @@ const isMobile = computed(() => window.innerWidth < 1030);
 .photo-column {
   padding: 0;
   height: 98%;
-  /* Добавляем высоту 100% для занимания всей высоты контейнера */
+  position: relative; /* Add this line to make it the positioning context */
+}
+
+.pinned-to-bottom {
+  position: absolute;
+  bottom: 0;
 }
 /* Стили для .cont (в случае мобильного вида) */
 .cont {
