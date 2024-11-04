@@ -10,7 +10,7 @@
             <p class="text-body-1">{{ t('aboutContent') }}</p>
           </div>
           <div class="d-flex flex-row my-7">
-            <p class="text-h3 text-blockHeader"> 1,5 </p>
+            <p class="text-h3 text-blockHeader"> 2 </p>
             <p class="ml-3 text-blockHeader" style="border-top: 1px solid #e5e5e5">{{ t('experience') }}</p> 
           </div>
         </div>
