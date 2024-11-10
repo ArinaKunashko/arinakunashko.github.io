@@ -52,8 +52,8 @@
     </section>
   </template>
   
-  <script setup>
-  import { ref, onMounted, onUnmounted, watch, computed } from 'vue';
+  <script lang="ts" setup>
+  import { ref, onMounted, watch, computed } from 'vue';
   import { useI18n } from 'vue-i18n';
   import { useStore } from 'vuex';
   
@@ -61,7 +61,18 @@
   const { t } = useI18n();
   const currentLanguage = computed(() => store.getters.currentLanguage);
   
-  const cards = ref([]);
+  interface Card {
+    title:string,
+    univ?:string,
+    text?:string,
+    techno?:string,
+    libr?:string,
+    languages?:string,
+    udemy?:string,
+    linkedIn?:string
+  }
+
+  const cards = ref<Card[]>([]);
   
   const updateCards = () => {
     cards.value = [
@@ -84,17 +95,10 @@
     ];
   };
   
-  // Обновление карточек при создании компонента
   onMounted(updateCards);
   
-  // Обновление карточек при изменении языка
   watch(currentLanguage, () => {
     updateCards();
-  });
-  
-  // Обновление карточек при размонтировании компонента
-  onUnmounted(() => {
-    // Очистка ресурсов, если необходимо
   });
   
   </script>

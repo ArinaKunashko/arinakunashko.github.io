@@ -51,6 +51,9 @@ export default {
   describtionCalcul: 'Developed the frontend part of the mortgage calculator product using Vue 3 and Bulma CSS for styling.With intuitive input fields and real-time calculations, users can dynamically adjust loan parameters, such as interest rates and loan terms, to visualize the impact on monthly payments. ',
   mortgageCalculator: 'Mortgage Calculator',
   inTheCompany: 'In the company',
-  goToTheWebsite: 'Go to the website'
+  goToTheWebsite: 'Go to the website',
+  technocroy: 'Technocroy',
+  crmSystem: 'CRM system',
+  describtionCRM: 'I develop new and optimize existing functionality of the CRM system, creating reusable components to improve development efficiency (inputs, dropdowns, tables, graphs). I also implement new functionality in calendars and tables, work with cash registers and create constructors for notifications about system updates.'
 
 };

@@ -31,10 +31,9 @@
   </v-container>
 </template>
 
-<script setup>
-import { ref, computed } from 'vue';
+<script lang="ts" setup>
+import { computed } from 'vue';
 
-const show = ref(true)
 const isMobile = computed(() => window.innerWidth < 1030);
 
 </script>

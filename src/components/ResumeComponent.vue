@@ -64,11 +64,11 @@
 
 
 <script setup>
-import { ref, onMounted, onUnmounted, watch, computed } from 'vue';
+import { ref, onMounted, watch, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useStore } from 'vuex';
 
-const store = useStore(); // Получаем доступ к хранилищу
+const store = useStore();
 const { t } = useI18n();
 const currentLanguage = computed(() => store.getters.currentLanguage);
 
@@ -112,17 +112,11 @@ const updateExperiences = () => {
 }
 
 const isMobile = computed(() => window.innerWidth < 768)
-// Обновление карточек при создании компонента
 onMounted(updateExperiences);
 
-// Обновление карточек при изменении языка
 watch(currentLanguage, () => {
     updateExperiences();
 });
 
-// Обновление карточек при размонтировании компонента
-onUnmounted(() => {
-    // Очистка ресурсов, если необходимо
-});
 </script>
 
